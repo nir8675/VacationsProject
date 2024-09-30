@@ -1,0 +1,161 @@
+.VacationCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fefefe;
+}
+
+.like-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.like-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+.like-button.liked {
+  color: #ff4d4d;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.date-range {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  height: 100px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+.price-box {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+}
+
+.btn-primary,
+.btn-danger {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #cc0000;
+  transform: translateY(-3px);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: none; /* Allow full width on small screens */
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .price-box {
+    font-size: 1.3rem;
+  }
+}
+
+/* Medium devices (tablets, less than 768px) */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Two cards per row on tablets */
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .VacationCards {
+    max-width: 1400px; /* Allow more space for cards */
+  }
+}

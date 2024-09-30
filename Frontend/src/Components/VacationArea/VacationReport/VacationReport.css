@@ -1,0 +1,151 @@
+/* .VacationReport {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.VacationReport h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+.btn-back {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+.btn-download {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #28a745;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #248038;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+} */
+
+.VacationReport {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.VacationReport h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.btn-back {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+.btn-download {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #248038;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .VacationReport h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-back,
+  .btn-download {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+
+  canvas {
+    max-width: 90%;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .VacationReport h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-back,
+  .btn-download {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  canvas {
+    max-width: 80%;
+  }
+}

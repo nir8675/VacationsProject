@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "e4163a9f-c701-421e-a90b-b0fc23faac11",
+		"name": "Vacations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32998636",
+		"_collection_link": "https://nir999.postman.co/workspace/Nir-Workspace~72398a9c-0125-475c-86cd-f8e00bfdb251/collection/32998636-e4163a9f-c701-421e-a90b-b0fc23faac11?action=share&source=collection_link&creator=32998636"
+	},
+	"item": [
+		{
+			"name": "Get All Vacations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vacations Valid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacations-valid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations-valid"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vacations Not Started",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacations-not-started",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations-not-started"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Vacation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "destination",
+							"value": "nirTest",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "city",
+							"type": "text"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-09-17",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-09-18",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"type": "file",
+							"src": "/C:/Users/USER/Downloads/WhatsApp Image 2024-05-11 at 20.10.21 (1).jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/vacations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\" :\"nir\", \r\n\"lastName\" :\"davidovich\", \r\n\"email\":\"nir12345@gmail.com\", \r\n\"password\":\"1234\", \r\n\"roleId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\": \"user@gmail.com\",\r\n\"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Vacation",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "destination",
+							"value": "CheckNirTest",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "city123",
+							"type": "text"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-09-10",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-09-15",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"type": "file",
+							"src": "/C:/Users/USER/Downloads/WhatsApp Image 2024-05-11 at 20.10.21.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/edit-vacation/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"edit-vacation",
+						"102"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Toggle-like",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "destination",
+							"value": "CheckNirTest",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "city123",
+							"type": "text"
+						},
+						{
+							"key": "startDate",
+							"value": "2024-09-10",
+							"type": "text"
+						},
+						{
+							"key": "endDate",
+							"value": "2024-09-15",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"type": "file",
+							"src": "/C:/Users/USER/Downloads/WhatsApp Image 2024-05-11 at 20.10.21.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/vacations/toggle-like/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacations",
+						"toggle-like",
+						"123"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vacation",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/vacation/124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"vacation",
+						"124"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxNywiZmlyc3ROYW1lIjoidXNlciIsImxhc3ROYW1lIjoidXNlciIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJyb2xlSWQiOiIyIn0sImlhdCI6MTcyNzU4NjY3MywiZXhwIjoxNzI3NTk3NDczfQ.SjrURpiLjb0t4sFpLuQRkqQviirEYiexS3A8nTf6kjQ",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,17 @@
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  background-image: linear-gradient(lightblue, white);
+  padding: 0;
+  overflow: hidden;
+}
+
+.error {
+  color: red;
+  position: absolute;
+  margin-left: 20px;
+  width: 100%;
+}

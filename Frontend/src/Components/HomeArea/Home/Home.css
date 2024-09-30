@@ -1,0 +1,60 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: calc(100vh - 94px);
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+  text-align: center;
+  background-image: url("../../../Assets/Images/background_home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.Home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.Home h2,
+.Home p {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.Home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.Home p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .Home h2 {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .Home h2 {
+    font-size: 6vw;
+  }
+}

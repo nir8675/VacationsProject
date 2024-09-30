@@ -1,0 +1,71 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.login-form {
+  background: linear-gradient(to right #e3e0de, #8ad2f2);
+  padding: 20px;
+  width: 300px;
+  border: 1px solid;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+.login-form > h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.login-form > div {
+  margin-bottom: 1rem;
+}
+
+.login-form > div > label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #16376bce;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.login-form > button {
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  background-color: #8cb8e7;
+  border: 1px solid #4d88c4;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+.login-form > button:hover {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.register-area {
+  text-align: center;
+  padding-top: 10px;
+}

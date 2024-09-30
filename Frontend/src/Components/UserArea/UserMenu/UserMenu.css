@@ -1,0 +1,46 @@
+.UserMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.UserMenu span {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.UserMenu a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.UserMenu a:hover {
+  color: #0056b3;
+}
+
+.guest-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .UserMenu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    padding: 10px;
+  }
+
+  .UserMenu span,
+  .UserMenu a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+}
